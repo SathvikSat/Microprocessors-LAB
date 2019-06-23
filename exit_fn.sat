@@ -1,0 +1,12 @@
+.macro exit
+	mov eax,1
+	int 0x80
+.endm
+
+
+
+#number and character are stored in ascii form coz 4,1 worrks with ascii alonecan specifiy how many values to be stored bu .ds 
+#p/x  $al (hexa), p/d
+
+#storing data to mem directly or various addr modes
+# .ds 10 == size /mem loc allocated
